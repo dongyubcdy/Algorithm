@@ -4,7 +4,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MAX_LOT_COUNT 100
-#define MAX_LOT_SIZE 100000
+// #define MAX_LOT_SIZE 100000
+#define MAX_LOT_SIZE 20
 #define MAX_MEMBER_ID 10000
 #define MAX_CROP 100
  
@@ -18,6 +19,7 @@ extern void init_member();
 extern void assign_member(int member_id, int size);
 extern void back_member(int member_id);
 extern void grow_member(int member_id, int crop);
+extern void test();
  
 static int N;
 static int lot[MAX_LOT_COUNT + 1][MAX_LOT_SIZE];
